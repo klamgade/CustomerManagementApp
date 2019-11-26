@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopBarComponent implements OnInit {
 
+  storeName: string;
+  isVisible: boolean;
+
+  changeVisibility(){
+    this.isVisible = !this.isVisible;
+  }
+
   constructor() { }
 
   ngOnInit() {
+    this.storeName = "Hamro Karobar";
+
   }
 
 }
